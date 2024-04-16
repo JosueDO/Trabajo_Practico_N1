@@ -1,9 +1,5 @@
-import java.util.Scanner;
+String nombre,mensaje;
 
-Scanner entrada = new Scanner(System.in);
-
-String nombre = entrada.nextLine();
-
-String mensaje= "Bienvenido " +nombre;
-
+nombre= "Josué Daniel Ortega";
+mensaje= "Bienvenido "+nombre;
 println(mensaje);
