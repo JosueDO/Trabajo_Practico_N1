@@ -25,7 +25,7 @@ void setup(){
      stroke(0);
      fill(random(0,255),random(0,255),random(0,255));
      ellipse(x+radio,y-radio,radio*2,radio*2);
-     x+=radio*2+radio/2;
+     x+=radio*2+radio/2; // espacio que deja entre ejes de cada circulo
      }while(x<width-radio*2); //controla que dibuje circulos hasta llegar al borde derecho
      x=5;
    }
