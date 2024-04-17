@@ -11,8 +11,8 @@ public void setup(){
 }
 public void dibujar(){
   fill(255,0,0);
-  for(posY=20;posY < height;posY+=distEntreRect+altRect){
-    for(posX=20;posX < width;posX+=distEntreRect+anchoRect){
+  for(posY=20;posY < height;posY+=distEntreRect+altRect){// actualiza posY cada vez que se termino de generar una linea de bloques
+    for(posX=20;posX < width;posX+=distEntreRect+anchoRect){ //genera bloques mientras actualiza Posx
       rect(posX,posY,anchoRect,altRect);
     }
   }
