@@ -1,10 +1,14 @@
+/** Dibuja un circulo y una linea que sube y baja  **/
+
 int posY;
-int incremento=1;
-int radio=40;
+int incremento;
+int radio;
 
 void setup(){
   size(400,400);
   posY=0;
+  incremento=1;
+  radio=40;
 }
 
 void draw(){
@@ -14,9 +18,9 @@ void draw(){
   ellipse(width/2,posY+radio,80,80);
   line(0,posY,width,posY);
   posY+=incremento;
-  if(posY>=height || posY<=0){
-    incremento*=-1;
-    radio=radio*-1;
-  
+  if(posY>=height || posY<=0)// controla si la posicion en y llega a los laterales de arriba y abajo
+  {
+    incremento*=-1; // cada vez que llega al borde se invierte su sentido
+    radio=radio*-1; // sirve para posicionar el circulo arriba o abajo de la linea
   }
 }
