@@ -1,3 +1,5 @@
+/** Dibujar escalera con puntos encima **/
+
 int x,y;
 int anchoEsc, altoEsc;
 
@@ -15,9 +17,9 @@ void setup()
     line(x+anchoEsc,y+altoEsc,x+anchoEsc,y+altoEsc*2);
     stroke(#F51B47);
     strokeWeight(8);
-    point(x+anchoEsc,y+altoEsc-10);
-    x+=anchoEsc;
-    y+=altoEsc;
+    point(x+anchoEsc,y+altoEsc-10);//el punto esta un poco mas arriba de cada escalon
+    x+=anchoEsc; //incremento x de cada escalon
+    y+=altoEsc;  //incremento de y en cada escalon
     
   }
 }
